@@ -7,7 +7,6 @@ class V1::SkillsController < ApplicationController
   def create
     Skill.create(
       skill: params[:skill]
-      student_id: current_user.id
       )
     render json: skill.as_json
   end
