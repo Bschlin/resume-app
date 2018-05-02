@@ -1,5 +1,6 @@
 class V1::ExperiencesController < ApplicationController
-  # before_action :authenticate_user
+  before_action :authenticate_user
+  
   def index
     experiences = Experience.all
     render json: experiences.as_json
@@ -12,7 +13,7 @@ class V1::ExperiencesController < ApplicationController
     experience.job_title = params[:job_title],
     experience.company = params[:company],
     experience.details = params[:details],
-    experience.student_id = params[:student_id]
+    experience.student_id = current_user.id
     )
 
     render json:  experience.as_json
