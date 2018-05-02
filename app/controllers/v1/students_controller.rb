@@ -1,5 +1,4 @@
 class V1::StudentsController < ApplicationController
-  has_secure_password
   def index
     students = Student.all
     render json: students.as_json
