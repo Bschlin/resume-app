@@ -25,7 +25,7 @@ Skill.create(skill: "Javascript")
 Skill.create(skill: "Martial Arts")
 Skill.create(skill: "Testing")
 Skill.create(skill: "Billing")
-Skill.create(skill: "Krav Magav")
+Skill.create(skill: "Krav Maga")
 Skill.create(skill: "Piano")
 Skill.create(skill: "Dancing")
 Skill.create(skill: "First Aid")
@@ -61,4 +61,29 @@ Experience.create([
   {start_date: "2003-6-6", end_date: "Present", job_title: "Singer/songwriter", company: "Def Jam Recordings", details: "Write songs, record songs, be a general badass.", student_id: 4},
   {start_date: "2002-6-6", end_date: "2013-12-2", job_title: "Lab assistant", company: "Abbott Labs", details: "Assist principal researchers in running lab experiments, recording data, and writing reports and studies for publication.", student_id: 5},
   {start_date: "2013-12-2", end_date: "Present", job_title: "Mad scientist", company: "Self-employed", details: "Yea, I basically just do whatever I want and travel across space and time with my grandchildren. It's pretty cool.", student_id: 5},
+  ])
+
+StudentSkill.create([
+  {student_id: 1, skill_id: 8},
+  {student_id: 1, skill_id: 11},
+  {student_id: 1, skill_id: 3},
+  {student_id: 1, skill_id: 4},
+  {student_id: 1, skill_id: 5},
+  {student_id: 1, skill_id: 6},
+  {student_id: 2, skill_id: 3},
+  {student_id: 2, skill_id: 4},
+  {student_id: 2, skill_id: 5},
+  {student_id: 2, skill_id: 6},
+  {student_id: 3, skill_id: 8},
+  {student_id: 3, skill_id: 11},
+  {student_id: 3, skill_id: 17},
+  {student_id: 4, skill_id: 18},
+  {student_id: 4, skill_id: 19},
+  {student_id: 4, skill_id: 20},
+  {student_id: 4, skill_id: 21},
+  {student_id: 5, skill_id: 22},
+  {student_id: 5, skill_id: 23},
+  {student_id: 5, skill_id: 24},
+  {student_id: 5, skill_id: 25},
+  {student_id: 5, skill_id: 18}
   ])
