@@ -1,13 +1,14 @@
 class V1::EducationsController < ApplicationController
   def create
-    education = Education.new(
-      start_date: params["start_date"],
-      end_date: params["end_date"],
-      degree: params["degree"],
-      university_name: params["university_name"],
-      details: params["details"],
-      student_id: params["student_id"],
+    education = Education.create(
+      education.start_date = params[:start_date],
+      education.end_date = params[:end_date],
+      education.degree = params[:degree],
+      education.university_name = params[:university_name],
+      education.details = params[:details],
+      education.student_id = params[:student_id],
     )
+    render json:  education.as_json 
   end
 
   def show
