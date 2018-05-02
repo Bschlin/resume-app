@@ -7,13 +7,13 @@ class V1::ExperiencesController < ApplicationController
   end
 
   def create
-    Experience.create(
-    experience.start_date = params[:start_date],
-    experience.end_date = params[:end_date],
-    experience.job_title = params[:job_title],
-    experience.company = params[:company],
-    experience.details = params[:details],
-    experience.student_id = current_user.id
+    experience = Experience.create(
+      experience.start_date = params[:start_date],
+      experience.end_date = params[:end_date],
+      experience.job_title = params[:job_title],
+      experience.company = params[:company],
+      experience.details = params[:details],
+      experience.student_id = current_user.id
     )
 
     render json:  experience.as_json

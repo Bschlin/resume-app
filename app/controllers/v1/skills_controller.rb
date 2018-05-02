@@ -5,9 +5,9 @@ class V1::SkillsController < ApplicationController
   end
 
   def create
-    Skill.create(
+    skill = Skill.create(
       skill: params[:skill]
-      )
+    )
     render json: skill.as_json
   end
 
