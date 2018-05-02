@@ -22,3 +22,4 @@ class Student < ApplicationRecord
     skills: skills
     }
   end
+end
